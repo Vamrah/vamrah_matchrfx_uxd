@@ -1,0 +1,122 @@
+$primary_accent: #fb5e32;
+
+.combined-control {
+    display: grid;
+    grid-template-columns: minmax(80px, 1fr) 200px 60px;
+    grid-template-rows: 18px 18px;
+    height: 36px;
+    margin: 10px 25px;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    overflow: hidden;
+
+    input {
+        grid-column: 1;
+        max-width: 100%;
+        padding: 0 5px 2px 10px;
+        border: 0;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        text-align: left;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    select {
+        grid-column: 2;
+        margin: 0;
+        padding: 0 28px 2px 10px;
+        background: no-repeat right 12px top 13px / 12px 12px url(./assets/icons/arrow-down-react-gray.svg) #f4f4f4;
+        border: 0;
+        border-left: 1px solid #ccc;
+        border-right: 1px solid #aaa;
+        border-radius: 0;
+        -webkit-appearance: none;
+        appearance: none;
+    }
+
+    input,
+    select {
+        grid-row: 1 / -1;
+        font-family: "Roboto", "sans-serif";
+        // font-size: 1rem;
+        outline: none;
+    }
+
+    .prev-btn:disabled {
+        background: no-repeat bottom 5px right 5px / 15% url(./assets/icons/arrow-up.svg) #eee;
+        color: #777;
+        text-shadow: none;
+    }
+
+    .prev-btn {
+        position: relative;
+        margin: 0;
+        border-top-right-radius: 7px;
+        background: no-repeat bottom 5px right 5px / 15% url(./assets/icons/arrow-up-wht.svg) $primary_accent;
+        color: #fff;
+        text-shadow: -.05ex 0 #fff, .05ex 0 #fff;
+    }
+
+    .prev-btn:disabled:after {
+        background: #aaa;
+    }
+
+    .prev-btn:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: #000;
+    }
+
+    .next-btn:disabled {
+        background: no-repeat bottom 6px right 5px / 15% url(./assets/icons/arrow-down.svg) #eee;
+        color: #777;
+        text-shadow: none;
+    }
+
+    .next-btn {
+        padding-bottom: 1px;
+        margin: 0;
+        border-bottom-right-radius: 7px;
+        background: no-repeat bottom 6px right 5px / 15% url(./assets/icons/arrow-down-wht.svg) $primary_accent;
+        color: #fff;
+        text-shadow: -.05ex 0 #fff, .05ex 0 #fff;
+    }
+
+    .prev-btn+.next-btn:disabled:after {
+        background: transparent;
+    }
+
+    .next-btn:disabled:after {
+        background: #aaa;
+    }
+
+    .next-btn:after {
+        content: "";
+        position: absolute;
+        top: -1px;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: #000;
+    }
+
+    button {
+        grid-column: 3;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+        padding: 0 0 0 8px;
+        border: 0;
+        font-size: .7rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+}

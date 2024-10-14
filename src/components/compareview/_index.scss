@@ -1,0 +1,25 @@
+.tabs-wrapper {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 10;
+  // padding: 10px;
+  // border-bottom: 1px solid #ddd;
+}
+
+.removed-items {
+  position: relative;
+  padding-top: 50px;
+
+  h3 {
+    position: absolute;
+    top: 20px;
+  }
+}
+.btn-bank {
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  top: -25px;
+  left: 85px;
+}

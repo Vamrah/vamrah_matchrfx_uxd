@@ -1,0 +1,56 @@
+////////////////////////////////// RFP ////////////////////
+/// 
+/// 
+/// 
+/// 
+.reqlist-container {
+    margin-top: 20px;
+
+    .list-builder-item {
+        border-bottom: 1px solid #ccc;
+        border-radius: 0;
+    }
+}
+
+.reqlist-item {
+    display: grid;
+    row-gap: 10px;
+    width: 100%;
+    position: relative;
+    padding: 10px 38px 10px 20px;
+    z-index: 2;
+
+    .reqlist-item-content,
+    .reqlist-vendor-content {
+        display: grid;
+        grid-template-columns: 40px 1fr 150px;
+        gap: 10px;
+        width: 100%;
+
+        .req-num {
+            grid-column: 1;
+            grid-row: 1/-1;
+        }
+
+        .req,
+        .capability-detail {
+            grid-column: 2;
+
+            span.emphasis {
+                margin-right: 6px;
+            }
+        }
+
+        .priority-box-container {
+            grid-column: 3;
+            display: flex;
+            flex: 0 0 100px;
+        }
+
+        .capability-box {
+            .hro-input-wrapper {
+                margin: 0 !important;
+            }
+        }
+    }
+}

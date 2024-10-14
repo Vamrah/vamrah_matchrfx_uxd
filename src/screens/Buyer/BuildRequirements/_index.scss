@@ -1,0 +1,73 @@
+.library-access {
+    .panel-content {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+
+        .dyn-list-controls {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            position: absolute;
+
+            .toggle-button {
+                min-width: 50px;
+                width: 60px;
+                height: 36px;
+                margin-bottom: 10px;
+                padding: 2px 5px;
+                font-size: .8rem;
+                line-height: 1rem;
+            }
+        }
+    }
+
+    .library-access-panel,
+    .list-builder-container {
+        margin-top: 60px;
+    }
+
+    .library-access-panel {
+        display: flex;
+        flex-flow: column wrap;
+        width: 0;
+        overflow: hidden;
+        transition: width 0.3s ease;
+
+        &.expanded {
+            width: 30%;
+            transition: width 0.3s ease;
+        }
+
+        label {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin: 5px 0;
+        }
+    }
+
+    .list-builder-container {
+        flex: 1;
+        transition: width 0.3s ease;
+
+        &.collapsed {
+            width: 50%;
+            transition: width 0.3s ease;
+        }
+    }
+}
+
+.extended-height {
+    .content {
+        padding-top: 20px;
+
+        .sub-panel-2 {
+            max-height: 650px;
+        }
+    }
+
+    #tab3 table tr td:first-of-type {
+        text-align: left;
+    }
+}

@@ -1,0 +1,40 @@
+$breakpoint: 925px;
+$primary_accent: #fb5e32;
+$secondary_accent: #122048;
+$dark_accent: #dd390b;
+$muted_accent: rgba(251, 251, 251, 0.4);
+$font_global: 400 15px/18px "Roboto", "sans-serif";
+$font_confidence_interval: 700 12px/15px "Roboto Condensed";
+
+//RFP Colors
+// for Borders & Text
+$cap-color-standard: #005c00;
+$cap-color-not-offered: #f20016;
+$cap-color-custom: #676800;
+$cap-color-3rd-party: #ffea00;
+$cap-color-roadmap: #f18f00;
+$cap-color-default: #474747;
+
+// for background
+$cap-color-standard-lt: #7ac07a;
+$cap-color-not-offered-lt: #ff9a9a;
+$cap-color-custom-lt: #b4b165;
+$cap-color-3rd-party-lt: #fff7a0;
+$cap-color-roadmap-lt: #ffcb7f;
+$cap-color-default-lt: white; 
+
+:root {
+    --cap-color-standard: #{$cap-color-standard};
+    --cap-color-not-offered: #{$cap-color-not-offered};
+    --cap-color-custom: #{$cap-color-custom};
+    --cap-color-3rd-party: #{$cap-color-3rd-party};
+    --cap-color-roadmap: #{$cap-color-roadmap};
+    --cap-color-default: #{$cap-color-default};
+
+    --cap-color-standard-lt: #{$cap-color-standard-lt};
+    --cap-color-not-offered-lt: #{$cap-color-not-offered-lt};
+    --cap-color-custom-lt: #{$cap-color-custom-lt};
+    --cap-color-3rd-party-lt: #{$cap-color-3rd-party-lt};
+    --cap-color-roadmap-lt: #{$cap-color-roadmap-lt};
+    --cap-color-default-lt: #{$cap-color-default-lt};
+}

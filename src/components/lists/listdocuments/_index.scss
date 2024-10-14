@@ -1,0 +1,33 @@
+.collapse-button {
+    width: 24px;
+    height: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+input::file-selector-button {
+    height: 30px !important;
+    width: 30px !important;
+    background: no-repeat center / 90% url(./assets/icons/icon-upload24.svg) #fff;
+    border: 0;
+    outline: 0;
+    overflow: hidden;
+    color: transparent;
+    cursor: pointer;
+}
+
+.doc-list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    span {
+        display: flex;
+        align-items: center;
+        height: 30px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        cursor: pointer;
+    }
+}

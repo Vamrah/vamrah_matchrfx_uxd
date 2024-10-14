@@ -1,0 +1,472 @@
+/////////////////////// Build Pages ////////////////////
+.rfplc-outer-container {
+    display: flex;
+
+    .rfplc-container {
+        flex: 1 1;
+        height: 100%;
+        padding: 30px;
+        overflow-y: scroll;
+        overscroll-behavior: none;
+        scroll-behavior: smooth;
+        scrollbar-gutter: stable;
+        cursor: default;
+        scrollbar-width: thin;
+        scrollbar-color: transparent transparent;
+
+        .rfplc-inner {
+            display: flex;
+            flex-direction: column;
+            grid-gap: 20px;
+            gap: 20px;
+            width: 100%;
+            padding: 0;
+
+            .rfplci-s1,
+            .rfplci-s2 {
+                display: flex;
+                flex-direction: row;
+                grid-gap: 20px;
+                gap: 20px;
+                width: 100%;
+            }
+
+            .rfplci-s2 {
+                max-width: 98%;
+            }
+
+            .s1-area {
+                display: flex;
+                flex-direction: column;
+                flex: 1 1;
+                grid-gap: 15px;
+                gap: 15px;
+                position: relative;
+
+                .hro-input-wrapper-v2 {
+                    position: relative;
+
+                    .label.going-out,
+                    .label.out {
+                        top: -5px;
+                        left: 10px;
+                        transition: all .1s cubic-bezier(.4, 0, .2, 1);
+                        color: #000;
+                        font: 700 .8rem / .8rem "Roboto", sans-serif;
+                    }
+
+                    .label {
+                        position: absolute;
+                        left: 10px;
+                        top: 20px;
+                        pointer-events: none;
+                        width: auto;
+                        margin: 0;
+                        background: none;
+                        font: 400 1rem / 1.2rem "Roboto", sans-serif;
+                        color: #474747;
+                        text-align: left;
+                        transition: all 5ms cubic-bezier(.4, 0, .2, 1);
+                    }
+
+                    textarea {
+                        max-width: 100% !important;
+                        line-height: 1.5rem;
+                        overflow-y: auto;
+                    }
+
+                    .hro-input-v2 {
+                        height: 36px;
+                        min-width: 50px;
+                        max-width: 500px;
+                        margin-top: 10px;
+                        padding: 5px 10px;
+                        border: 1px solid #aaa;
+                        border-radius: 8px;
+                        background: none;
+                        font: 400 1rem / 1.2rem "Roboto", sans-serif;
+                    }
+
+                    textarea,
+                    textarea.scrollbar-thin {
+                        cursor: text;
+                    }
+
+                    input:disabled,
+                    select:disabled,
+                    textarea:disabled {
+                        background-color: rgba(0, 0, 0, .03) !important;
+                        cursor: not-allowed;
+                        opacity: 1;
+                        color: #474747;
+                    }
+
+                    .scrollbar-thin {
+                        scroll-behavior: smooth;
+                        scrollbar-gutter: stable;
+                        cursor: default;
+                        scrollbar-width: thin;
+                        scrollbar-color: transparent transparent;
+                    }
+
+                    .hro-input-v2 {
+                        width: 100%;
+                    }
+
+                    textarea {
+                        resize: none;
+                    }
+
+                    textarea {
+                        max-width: 100%;
+                        line-height: 1.5rem;
+                        overflow-y: auto;
+                    }
+
+                    .hro-input-wrapper-v2 .hro-input-v2 {
+                        height: 36px;
+                        min-width: 50px;
+                        max-width: 500px;
+                        margin-top: 10px;
+                        padding: 5px 10px;
+                        border: 1px solid #aaa;
+                        border-radius: 8px;
+                        background: none;
+                        font: 400 1rem / 1.2rem "Roboto", sans-serif;
+                    }
+
+                    textarea,
+                    textarea.scrollbar-thin {
+                        cursor: text;
+                    }
+
+                    input:disabled,
+                    select:disabled,
+                    textarea:disabled {
+                        background-color: rgba(0, 0, 0, .03) !important;
+                        cursor: not-allowed;
+                        opacity: 1;
+                        color: #474747;
+                    }
+                }
+
+                div {
+                    min-width: 200px;
+
+                    &:nth-of-type(2) textarea {
+                        height: 60px !important;
+                    }
+                }
+
+
+            }
+
+            .s2a-area {
+                display: flex;
+                flex-direction: row;
+                gap: 5px;
+                position: relative;
+                margin-right: auto;
+
+                &.disabled {
+                    .switch {
+                        opacity: 0.7;
+                    }
+                }
+            }
+
+            .s2b-area {
+                display: flex;
+                justify-content: flex-end;
+                flex-direction: column;
+                flex: 1 1 0%;
+                gap: 15px;
+                position: relative;
+
+                textarea {
+                    max-width: 100% !important;
+                    min-height: 600px;
+                }
+            }
+
+            .s3-area {
+                position: relative;
+            }
+
+            .s4-area {
+                position: relative;
+
+                .hro-input-wrapper-v2 {
+                    width: 100%;
+
+                    textarea {
+                        height: 48px;
+                        width: 98%;
+                        max-width: 98%;
+                    }
+                }
+            }
+        }
+
+        .float-filename {
+            display: flex;
+            position: absolute;
+            top: 3px;
+            left: 34px;
+            font-size: .8rem;
+            font-weight: 700;
+        }
+
+        .library-box {
+            min-width: 150px;
+
+            .library-box-info {
+                display: flex;
+                flex-flow: column wrap;
+                align-items: center;
+                grid-gap: 6px;
+                gap: 6px;
+                max-width: 200px;
+                margin: 10px 0 0;
+                padding: 12px;
+                background: #eee;
+                border-radius: 8px;
+                color: #474747;
+
+                .lib-box {
+                    display: flex;
+                    flex-flow: column wrap;
+                    grid-gap: 8px;
+                    gap: 8px;
+                    padding: 0 5px;
+                    width: 100%;
+                    height: auto;
+                    margin: 0;
+
+                    &.disabled .dpoint {
+                        opacity: .7;
+                    }
+
+                    .dpoint {
+                        display: flex;
+                        flex-wrap: wrap;
+                        margin-left: 4px;
+                        font-size: .9rem;
+                    }
+
+                    span {
+                        min-width: 100%;
+
+                        &.dp-label {
+                            font-size: .8rem;
+                            font-weight: 700;
+                            color: #000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.rfplc-inner .s2a-area.disabled .switch {
+    opacity: .7;
+}
+
+.switch.formfile .slider {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 75px;
+}
+
+.switch .slider {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 46px;
+    height: 100%;
+    background: #fff;
+    border-radius: 6px;
+    transition: right .3s;
+    z-index: 1;
+}
+
+.switch.formfile {
+    width: 150px;
+    height: 45px;
+}
+
+.switch {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100px;
+    height: 38px;
+    padding: 5px;
+    background: #ccc;
+    border: 3px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+
+    &.formfile {
+        width: 150px;
+        height: 45px;
+
+        .slider {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 75px;
+            /* Update to fit text */
+        }
+
+        &.active {
+            .slider {
+                right: 69px;
+                /* Update to fit text */
+            }
+
+            .label:nth-of-type(1) {
+                font-weight: 700;
+                color: #000;
+            }
+
+            .label:nth-of-type(2) {
+                font-weight: 500;
+                color: #474747;
+            }
+        }
+
+        &::after {
+            content: "*";
+            position: absolute;
+            top: -7px;
+            right: -11px;
+        }
+
+        .label {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-width: 50px;
+            text-align: center;
+        }
+
+        .label:nth-of-type(1) {
+            font-weight: 500;
+            color: #474747;
+        }
+
+        .label:nth-of-type(2) {
+            font-weight: 700;
+            color: #000;
+        }
+
+        .tooltip-sans::after {
+            top: 45px;
+        }
+
+        .label:first-of-type {
+            font-weight: 500;
+            color: #474747;
+        }
+
+        .label {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-width: 50px;
+            text-align: center;
+        }
+    }
+
+    .label:first-of-type {
+        font-weight: 500;
+        color: #474747;
+    }
+
+    .label {
+        font-size: 14px;
+        color: #000;
+        flex: 1 1;
+        text-align: center;
+        padding: 0 5px;
+        z-index: 2;
+    }
+}
+
+
+
+
+
+
+.switch {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 150px;
+    height: 45px;
+    padding: 5px;
+    background: #ccc;
+    border: 3px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.switch .slider {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 75px;
+    height: 100%;
+    background: #fff;
+    border-radius: 6px;
+    transition: right 0.3s;
+    z-index: 1;
+}
+
+.switch.formfile .label {
+    flex: 1;
+    text-align: center;
+    padding: 0 5px;
+    z-index: 2;
+    font-size: 14px;
+    color: #000;
+}
+
+.switch.formfile.text .slider {
+    right: 69px;
+}
+
+.switch.formfile.pdf .slider {
+    right: 0;
+}
+
+.switch.formfile.text .label:nth-of-type(1),
+.switch.formfile.pdf .label:nth-of-type(2) {
+    font-weight: 700;
+    color: #000;
+}
+
+.switch.formfile.text .label:nth-of-type(2),
+.switch.formfile.pdf .label:nth-of-type(1) {
+    font-weight: 500;
+    color: #474747;
+}
+
+.text-content {
+    white-space: pre-wrap;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.no-content {
+    color: #dc3545;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}

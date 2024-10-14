@@ -1,0 +1,36 @@
+.page-container {
+    .rfx-wrapper {
+        .panel.panel-1 {
+            .tab-content {
+                scrollbar-gutter: stable;
+
+                .content {
+
+                    &.summary-view,
+                    &.rates-view,
+                    &.inforce-view {
+                        position: relative;
+                        max-height: 650px;
+                        border: 0;
+
+                        .sub-panel {
+                            position: relative;
+                            height: 100%;
+                            max-height: 700px;
+                            padding: 30px;
+                            border: 0;
+
+                            .searchfield {
+                                top: auto;
+                            }
+                        }
+
+                        #tab3 table tr td:first-of-type {
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

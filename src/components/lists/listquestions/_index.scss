@@ -1,0 +1,33 @@
+////////////////////// Q&A Table ////////////////////
+/// 
+.qa-table th:first-child,
+.qa-table td:first-child {
+    max-width: 50px !important;
+    width: 50px !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.qa-question-list {
+    table {
+
+        th,
+        td {
+            min-width: 20px;
+            padding: 8px;
+        }
+    }
+}
+
+table {
+    font-size: 15px;
+
+    tr {
+
+        &:hover,
+        &:focus {
+            background: #eee;
+        }
+    }
+}

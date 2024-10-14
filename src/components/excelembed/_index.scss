@@ -1,0 +1,38 @@
+.eef-container {
+    position: relative;
+
+    .eef-spacer {
+        display: flex;
+        position: absolute;
+        top: -5px;
+        height: 10px;
+        width: 100%;
+        background: #fff;
+        z-index: 10;
+    }
+
+    .embedded-excel-file {
+        position: relative;
+        max-height: 650px;
+        padding: 30px 20px;
+
+        table {
+            border-collapse: collapse;
+
+            tr:first-of-type {
+                position: sticky;
+                top: -7px;
+                font-weight: 700;
+                background: #ccc;
+                border-top: 5px solid #fff;
+            }
+
+            th,
+            td {
+                padding: 3px 5px;
+                border: 1px solid #eee;
+                font-size: .9rem;
+            }
+        }
+    }
+}

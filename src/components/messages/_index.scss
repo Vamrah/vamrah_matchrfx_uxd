@@ -1,0 +1,198 @@
+.chat-container-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: -webkit-max-content;
+    height: max-content;
+    overflow: hidden;
+
+    .chat-container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+
+        .chat-container-inner {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+
+            .cci-log {
+                display: flex;
+                flex-grow: 1;
+                flex-direction: column-reverse;
+                height: -webkit-max-content;
+                height: max-content;
+                padding: 10px;
+                overflow-y: auto;
+                overscroll-behavior: none;
+            }
+
+            .cci-input {
+                display: grid;
+                grid-template-columns: 1fr auto;
+                width: 100%;
+                padding: 10px;
+                background: #fff;
+
+                .ccii-wrapper {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    align-items: center;
+                    border-radius: 24px;
+                    min-width: 0;
+                    position: relative;
+                    padding: 0 10px;
+                    background: #fff;
+                    border: 1px solid #ccc;
+                    overflow: hidden;
+
+                    input {
+                        border: 0 !important;
+                    }
+                }
+
+                .ccii-action {
+                    display: flex;
+                    align-items: flex-end;
+                    width: 100%;
+                    height: 100%;
+                    padding: 6px;
+
+                    chat-container-wrapper .chat-container .chat-container-inner button {
+                        height: 30px;
+                        width: 30px;
+                    }
+
+                    .send24:disabled {
+                        opacity: 0.3;
+                        background: no-repeat 50% / 90% url(https://assets.codepen.io/1690529/send24.svg) transparent !important;
+                    }
+
+                    button:disabled {
+                        cursor: not-allowed;
+                        border-color: transparent;
+                        color: rgba(0, 0, 0, 0.6);
+                        background-color: #eee;
+                    }
+
+                    .send24 {
+                        height: 30px;
+                        width: 30px;
+                        background: no-repeat 50% / 90% url(https://assets.codepen.io/1690529/send24.svg);
+                    }
+
+                    .send24,
+                    .upload24 {
+                        border: 0;
+                        outline: 0;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .editable-text-button {
+                align-items: flex-end;
+                display: flex;
+                justify-content: flex-end;
+                margin: auto 5px 5px auto;
+                height: -webkit-max-content;
+                height: max-content;
+            }
+        }
+    }
+}
+.chat-container-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.chat-container-inner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.cci-log {
+    flex-grow: 1;
+    padding: 10px;
+    overflow-y: auto;
+    // background-color: #f9f9f9;
+    // border: 1px solid #ddd;
+}
+
+.message {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.user-bubble {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.message-text {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.cci-input {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    border-top: 0;
+}
+
+.ccii-wrapper {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.editable-text {
+    flex-grow: 1;
+}
+
+.editable-text-input {
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    border-radius: 4px;
+    outline: none;
+}
+
+.ccii-action {
+    margin-left: 10px;
+}
+
+.send24 {
+    background-color: $primary_accent;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.send24:disabled {
+    background-color: #ccc;
+}

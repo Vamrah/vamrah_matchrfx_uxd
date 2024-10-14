@@ -1,0 +1,16 @@
+.page-container {
+    .rfx-wrapper.three-four-panel {
+
+        .panel {
+            flex: unset;
+
+            &.panel-1 {
+                flex: 1 1 50%;
+                .rfp-build-list-table {
+                    max-height: 600px;
+                    max-width: 1100px;
+                }
+            }
+        }
+    }
+}

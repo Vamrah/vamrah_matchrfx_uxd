@@ -1,0 +1,49 @@
+.list-builder-item {
+    ol {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    li {
+        // margin: 5px 0;
+        position: relative;
+        list-style-type: none;
+    }
+}
+
+
+.input-container {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    max-width: 600px;
+    margin: 0 0 3px;
+    padding: 2px 2px 4px 0;
+
+    &.active {
+        background-color: #eee;
+    }
+
+    textarea {
+        width: calc(100% - 130px);
+        height: 60px;
+        padding: 5px 8px;
+        background: #fff;
+    }
+
+    .textarea-indent {
+        width: calc(100% - 180px);
+        margin-left: 50px;
+    }
+
+    .textarea-main {
+        padding: 20px 8px 5px 8px;
+    }
+
+    label {
+        position: absolute;
+        left: 78px;
+        margin-top: 5px;
+        font: 700 12px / 15px "Roboto Condensed";
+    }
+}
