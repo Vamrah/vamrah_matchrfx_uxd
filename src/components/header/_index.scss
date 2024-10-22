@@ -1,0 +1,144 @@
+.top-navigations {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+
+    button {
+        min-width: 95px;
+    }
+
+    .navigation-wrapper {
+        display: flex;
+        align-items: flex-start;
+        flex-flow: column;
+        position: relative;
+        font-family: "Roboto Condensed";
+        counter-reset: section;
+
+        /* Initialize the counter here */
+        &.nw-horiz {
+            flex-flow: row;
+
+            .navigation-item {
+                justify-content: center;
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        .navigation-item {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            grid-gap: 10px;
+            gap: 10px;
+            position: relative;
+            padding: 0;
+            width: min-content;
+            background: transparent;
+            border: 1px solid transparent;
+            color: #777;
+            text-align: left;
+            font-size: 14px;
+            cursor: pointer;
+            counter-increment: section;
+
+            /* Increment the counter for each item */
+            .box-marker {
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                min-width: 24px;
+                max-width: 24px;
+                height: 24px;
+                padding-right: 1px;
+                border-radius: 50%;
+                background: #ccc;
+                font-size: 1rem;
+                cursor: pointer;
+
+                &::after {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    content: counter(section);
+                    /* Use the counter value */
+                    font-weight: 900;
+                    font-size: 1.05rem;
+                    font-family: "Roboto", "sans-serif";
+                    color: #000;
+                    text-align: center;
+                }
+            }
+
+            &.current {
+                .primary-item {
+                    background: #fff;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    transform: translateY(-4px);
+                }
+
+                .box-marker {
+                    min-width: 24px;
+                    max-width: 24px;
+                    height: 24px;
+                    background: $primary_accent;
+                    color: #fff;
+
+                    &::after {
+                        color: #fff;
+                    }
+                }
+            }
+
+            .primary-item {
+                display: flex;
+                align-items: center;
+                grid-gap: 10px;
+                gap: 10px;
+                position: relative;
+                min-width: 145px;
+                padding: 10px 12px;
+                border: 1px solid transparent;
+                cursor: pointer;
+
+                label {
+                    display: inline-block;
+                    position: relative;
+                    min-width: 65px;
+                    width: min-content;
+                    font-weight: 700;
+                    font-size: 1rem;
+                    cursor: pointer;
+                }
+            }
+
+            a.primary-item {
+                justify-content: center;
+                flex-direction: column;
+                min-width: 65px;
+                color: #777;
+                text-decoration: none; // Ensure links don't have underline
+            }
+        }
+    }
+}
+
+.nw-horiz .navigation-item .primary-item .box-marker {
+    padding-right: 0;
+}
+
+.navigation-wrapper .navigation-item.current .box-marker {
+    min-width: 28px;
+    max-width: 28px;
+    height: 28px;
+    background: $primary_accent;
+    color: #fff;
+}
+
+
+.box-marker::after {
+    font-size: 1.25rem;
+}

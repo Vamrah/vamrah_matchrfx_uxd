@@ -1,0 +1,212 @@
+/////////////////////////////// CONTENT LIBRARY /////////////
+
+.library-container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    background: #fff;
+    border-radius: 8px;
+
+    .tree-container {
+        width: 30%;
+        border-right: 1px solid #ccc;
+
+        ul.tree {
+            padding: 10px;
+        }
+    }
+
+    .tabs-container {
+        width: 70%;
+        padding: 20px;
+    }
+
+    .tabs-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tabs {
+        display: flex;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .tabbar-item {
+        padding: 10px 20px;
+        cursor: pointer;
+        border: none;
+        background: none;
+        outline: none;
+        transition: background 0.3s;
+    }
+
+    .tabbar-item:hover,
+    .tabbar-item.active {
+        background: #f0f0f0;
+    }
+
+    .tab-content {
+        display: none;
+        padding: 20px;
+    }
+
+    .tab-content.active {
+        display: block;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    form label {
+        margin: 10px 0 5px;
+    }
+
+    form input,
+    form select,
+    form textarea {
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+    }
+}
+
+.sub-tab-buttons {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+}
+
+.sub-tab-button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    outline: none;
+    transition: background 0.3s;
+}
+
+.sub-tab-button:hover,
+.sub-tab-button.active {
+    background: #f0f0f0;
+}
+
+.sub-tab-content {
+    display: none;
+    padding: 20px;
+}
+
+.sub-tab-content.active {
+    display: block;
+}
+
+.inner-tabs {
+    width: 100%;
+}
+
+
+.library-container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    background: #fff;
+    border-radius: 8px;
+
+    .tree-container {
+        width: 30%;
+        border-right: 1px solid #ccc;
+
+        ul.tree {
+            padding: 10px;
+        }
+    }
+
+    .tabs-container {
+        width: 70%;
+        padding: 20px;
+    }
+
+    .tabs-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tabs {
+        display: flex;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .tabbar-item {
+        padding: 10px 20px;
+        cursor: pointer;
+        border: none;
+        background: none;
+        outline: none;
+        transition: background 0.3s;
+    }
+
+    .tabbar-item:hover,
+    .tabbar-item.active {
+        background: #f0f0f0;
+    }
+
+    .tab-content {
+        display: none;
+        padding: 20px;
+    }
+
+    .tab-content.active {
+        display: block;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    form label {
+        margin: 10px 0 5px;
+    }
+
+    form input,
+    form select,
+    form textarea {
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+    }
+}
+
+.sub-tab-buttons {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+}
+
+.sub-tab-button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    outline: none;
+    transition: background 0.3s;
+}
+
+.sub-tab-button:hover,
+.sub-tab-button.active {
+    background: #f0f0f0;
+}
+
+.sub-tab-content {
+    display: none;
+    padding: 20px;
+}
+
+.sub-tab-content.active {
+    display: block;
+}
+
+.inner-tabs {
+    width: 100%;
+}

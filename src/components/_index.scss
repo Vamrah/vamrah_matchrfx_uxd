@@ -1,0 +1,38 @@
+@import './btngroup/index';
+@import './capabilityselect/index';
+@import './combinedcontrol/index';
+@import './compareview/index';
+@import './contentlibrary/index';
+@import './details/index';
+@import './excelembed/index';
+@import './extractedelements/index';
+@import './header/index';
+@import './history/index';
+@import './lists/index';
+@import './messages/index';
+@import './messagingcomponent/index';
+@import './panel/index';
+@import './qrview/index';
+@import './reqlibraries/index';
+@import './searchfiltercontrol/index';
+@import './summaryview/index';
+@import './tab/index';
+@import './teamproject/index';
+
+
+.vendor-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    padding: 10px;
+    .vendor-name span {
+        margin-right: 6px;
+    }
+}
+.contact-vendor-form {
+    padding: 20px 40px;
+    input {
+        margin-bottom: 10px;
+    }
+}

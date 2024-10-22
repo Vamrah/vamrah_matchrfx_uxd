@@ -1,0 +1,67 @@
+.rfp-doc-list {
+    .sub-panel-1 {
+        height: auto;
+    }
+}
+
+.rfp-list {
+    height: calc(100vh - 220px);
+    max-height: 660px;
+    overflow-y: auto;
+    
+    .rfp-list-item {
+        display: grid;
+        grid-template-columns: 1fr 300px;
+        grid-template-rows: 30px auto;
+        width: 100%;
+        padding: 10px 0;
+        border-bottom: 1px solid #ccc;
+
+        &:hover {
+            background: #eee;
+        }
+
+        .rfp-name {
+            grid-column: 1;
+            grid-row: 1;
+            display: flex;
+            align-items: center;
+            padding-left: 5px;
+
+            h3.rfp-name-title {
+                margin: 0;
+                padding: 0 5px;
+            }
+        }
+
+        .rfp-sum-details {
+            grid-column: 2;
+            grid-row: 1/-1;
+            display: flex;
+            flex-flow: column wrap;
+            padding: 5px 10px;
+            gap: 3px;
+
+            .rfp-sd-row {
+                display: flex;
+                justify-content: space-between;
+                flex-flow: row nowrap;
+                font-size: .9rem;
+
+                &:nth-of-type(1) {
+                    padding: 0 0 11px;
+                    font-size: 1rem;
+                }
+            }
+
+            .rfp-attr {
+                font-weight: 700;
+            }
+        }
+
+        .rfp-doc-list {
+            grid-column: 1;
+            grid-row: 2;
+        }
+    }
+}
